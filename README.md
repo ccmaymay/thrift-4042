@@ -1,6 +1,6 @@
 # Minimal working example for THRIFT-4042
 
-Docker images reproducing the bug in [THRIFT-4042](https://issues.apache.org/jira/browse/THRIFT-4042) and demonstrating a fix:
+Docker images reproducing the bug in [THRIFT-4042](https://issues.apache.org/jira/browse/THRIFT-4042) and demonstrating a fix.
 
 ## Public build
 
