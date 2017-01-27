@@ -4,14 +4,23 @@ services:
   - docker
 
 script:
-  - docker build -t thrift-4042 .
-  - docker run thrift-4042
-  - docker run thrift-4042
-  - docker run thrift-4042
-  - docker run thrift-4042
-  - docker run thrift-4042
-  - docker run thrift-4042
-  - docker run thrift-4042
-  - docker run thrift-4042
-  - docker run thrift-4042
-  - docker run thrift-4042
+  - docker build -f $BUILD_FILE -t $TAG .
+  - docker run $TAG
+  - docker run $TAG
+  - docker run $TAG
+  - docker run $TAG
+  - docker run $TAG
+  - docker run $TAG
+  - docker run $TAG
+  - docker run $TAG
+  - docker run $TAG
+  - docker run $TAG
+
+env:
+  matrix:
+    - BUILD_FILE="Dockerfile"
+      TAG="thrift-4042"
+    - BUILD_FILE="thrift-from-source.Dockerfile"
+      TAG="thrift-4042:thrift-from-source"
+    - BUILD_FILE="thrift-from-source-patched.Dockerfile"
+      TAG="thrift-4042:thrift-from-source-patched"
