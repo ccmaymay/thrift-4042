@@ -2,6 +2,9 @@
 
 Docker image reproducing the bug in [THRIFT-4042](https://issues.apache.org/jira/browse/THRIFT-4042).
 
+* [![thrift-4042 build status](https://api.travis-ci.org/cjmay/thrift-4042.png?branch=master)](https://travis-ci.org/cjmay/thrift-4042)
+* [Docker Hub](https://hub.docker.com/r/cjmay/thrift-4042/)
+
 To build the image:
 
 ```bash
