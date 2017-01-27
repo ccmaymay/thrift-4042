@@ -16,4 +16,8 @@ docker run thrift-4042
 
 As the bug is a race condition, it may not be reproduced the first time
 you run a container.  Consider running ten or more containers (in
-succession) to reproduce the bug with higher probability.
+succession) to reproduce the bug with higher probability:
+
+```bash
+for i in {1..10} ; do docker run thrift-4042 ; done
+```
